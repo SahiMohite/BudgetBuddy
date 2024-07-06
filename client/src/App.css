@@ -1,0 +1,93 @@
+/* General page styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #db5034;
+  
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Changed to space-between for better alignment */
+  align-items: center;
+  color: white;
+  width: 90%;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e0e0e0;
+}
+
+.navbar-links button {
+  margin-right: 10px;
+}
+/* Adjusted sign-in container margin */
+.sign-in-container {
+  margin-top: 30px; /* Reduced margin for better positioning */
+}
+
+.sign-in-container button {
+  margin: 0 10px; /* Adjusted button margin */
+}
+
+/* Specific styling for Clerk's UserButton if needed */
+.clerk-user-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.clerk-user-button:hover {
+  color: #e0e0e0;
+}
+
+/* Additional styles to ensure text and elements are vertically aligned properly */
+.navbar * {
+  align-self: center; /* Ensures elements are vertically centered in navbar */
+}
+
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 50%;
+  margin: 0 auto; 
+}
